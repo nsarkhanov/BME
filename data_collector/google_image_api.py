@@ -8,4 +8,4 @@
 #     print("{}: {}".format(counter, url))
 #     counter += 1
 from bing_image_downloader import downloader
-downloader.download(query_string, limit=100,  output_dir='dataset', adult_filter_off=True, force_replace=False, timeout=60, verbose=True)
+downloader.download('cat', limit=10,  output_dir='dataset', adult_filter_off=True, force_replace=False, timeout=60, verbose=True)

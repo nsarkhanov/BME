@@ -4,9 +4,9 @@ classeName_file='itemNames.text'
 with open(classeName_file,'rt') as f:
 	classeNames=f.read().rstrip('\n').split('\n')
 	f.close()
-# print(classeNames)
+print(classeNames)
 # #
 response = simp.simple_image_download
 
-for name in classeNames:
-	response().download(keywords = name ,limit = 20 )
+#for name in classeNames:
+response().download(keywords = "jacket, trousers, shoes, sweater, briefs, pyjamas, vest" ,limit = 20 )

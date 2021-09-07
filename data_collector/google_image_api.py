@@ -4,10 +4,11 @@ classeName_file='itemNames.text'
 with open(classeName_file,'rt') as f:
 	classeNames=f.read().rstrip('\n').split('\n')
 	f.close()
-print(len(classeNames))
-print(type(classeNames))
-print(classeNames)
-# downloader.download('cat', limit=10,  output_dir='dataset', adult_filter_off=True, force_replace=False, timeout=60, verbose=True)
+# print(len(classeNames))
+# print(type(classeNames))
+# print(classeNames)
+for i in classeNames:
+	downloader.download(i, limit=10,  output_dir='dataset', adult_filter_off=True, force_replace=False, timeout=60, verbose=True)
 
 
 

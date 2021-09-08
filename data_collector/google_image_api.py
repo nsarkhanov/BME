@@ -8,7 +8,7 @@ with open(classeName_file,'rt') as f:
 # print(type(classeNames))
 # print(classeNames)
 for i in classeNames:
-	downloader.download(i, limit=10,  output_dir='dataset', adult_filter_off=True, force_replace=False, timeout=60, verbose=True)
+	downloader.download(i, limit=30,  output_dir='dataset', adult_filter_off=True, force_replace=False, timeout=60, verbose=True)
 
 
 

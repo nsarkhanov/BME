@@ -30,6 +30,6 @@ def RunApp():
         for k , v in res.items():
             speach_model.speak(f"I have detected {v} {k}")       
     else:
-         speach_model.speak('Sorry ,my friend, I cant detect anything')
+         speach_model.speak('Sorry ,my friend,I cant detect anything')
 
 RunApp()

@@ -6,8 +6,17 @@ text0='Hello , My name is BeME. I will assit you during my life time. First I wa
 text1="nice to meet you "
 text2="I will call you friend"
 text3="when you need my help, just touch device."
+text_process="my friend ,  now I will explain my working principles  to understand me.when you  touch device i take  photo with camera of device then detect object on photo fro you."
+text4="I am happy with you"
 res=model.object_detector()
 speach_model.speak(text0)
+time.sleep(1)
+time.sleep(1)
+speach_model.speak(text1)
+time.sleep(1)
+speach_model.speak(text2)
+time.sleep(1)
+speach_model.speak(text_process)
 print(res)
 time.sleep(3)
 def RunApp():

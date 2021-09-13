@@ -2,6 +2,7 @@ from gtts import gTTS, lang
 import playsound
 import os
 
+start_sound_text='Hello , My name is BeME. I will assit you during my life time. First I want to know your name. Please  touch the dive one time then say your name'
 
 def speak(text):
     tts = gTTS(text=text, lang='en')
@@ -10,8 +11,7 @@ def speak(text):
     playsound.playsound(filename)
     os.remove(filename)
 
-text='Hello , My name is BeME. I will assit you during my life time. First I want to know your name. Please  touch the dive one time then say your name'
-speak(text)
+
 
 
 

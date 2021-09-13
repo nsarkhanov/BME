@@ -3,14 +3,18 @@ import cv2
 import pandas as pd
 import numpy as np
 cap=cv2.VideoCapture(0)
-# Model
+    # Model
 model = torch.hub.load('ultralytics/yolov5', 'yolov5s', pretrained=True)
-success , img =cap.read()
-result=model(img)
-# result.show()
-#   # img1 predictions (tensor)
-predicts=result.pandas().xyxy[0]  # img1 predictions (pandas)
-predicts['count']=1
-results=predicts[['name','count']]
-data=results.groupby(['name']).sum()
+def object_detector():
+    success , img =cap.read()
+    result=model(img)
+    predicts=result.pandas().xyxy[0]  # img1 predictions (pandas)
+    predicts['count']=1
+    results=predicts[['name','count']]
+    data=results.groupby(['name']).sum()
+    # data=data.reset_index()
+    # time.sleep(10)
+    data=data.to_dict()
+    data=data['count']
+    return data
 

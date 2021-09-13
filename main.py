@@ -2,16 +2,14 @@ from cv2 import sepFilter2D
 import model 
 import speach_model
 import time 
-start_sound_text='Hello , My name is BeME. I will assit you during my life time. First I want to know your name. Please  touch the device one time then say your name'
-
+text0='Hello , My name is BeME. I will assit you during my life time. First I want to know your name. Please  touch the device one time then say your name'
+text1="nice to meet you "
+text2="I will call you friend"
+text3="when you need my help, just touch device."
 res=model.object_detector()
-speach_model.speak(start_sound_text)
+speach_model.speak(text0)
 print(res)
 time.sleep(3)
-# print("My friend,I have detected {} {} and ".format(**res)) 
-# objcets=res.keys().to
-# numb_object=res.values()
-# print(objcets,numb_object)
 def RunApp():
     count=len(res)
     if count>1:

@@ -1,3 +1,4 @@
+from typing import runtime_checkable
 from cv2 import sepFilter2D
 import model 
 import speach_model
@@ -49,3 +50,4 @@ def RunApp():
     else:
          speach_model.speak('Sorry ,my friend,I cant detect anything')
 
+RunApp()

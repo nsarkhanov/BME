@@ -28,7 +28,7 @@ print(res)
 time.sleep(1)
 
 
-setup_function()
+# setup_function()
 
 def RunApp():
     count=len(res)

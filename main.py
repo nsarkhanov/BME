@@ -19,6 +19,10 @@ def setup_function():
     speach_model.speak(text2)
     time.sleep(1)
     speach_model.speak(text_process)
+    time.sleep(1)
+    speach_model.speak(text3)
+    time.sleep(1)
+    speach_model.speak(text4)
 print(res)
 time.sleep(1)
 

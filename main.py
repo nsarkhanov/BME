@@ -1,10 +1,9 @@
-from typing import runtime_checkable
-from cv2 import sepFilter2D
 import model 
 import speach_model
 import time 
 text0='Hello , My name is BeME. I will assit you during my life time. First I want to know your name. Please  touch the device one time then say your name'
 text1="nice to meet you Nurlan"
+
 text2="I will call you friend"
 text3="when you need my help, just touch device."
 text_process="my friend ,  now I will explain my working principles  to understand me.when you  touch device i take  photo with camera of device then detect object on photo fro you."
@@ -28,7 +27,7 @@ print(res)
 time.sleep(1)
 
 
-# setup_function()
+
 
 def RunApp():
     count=len(res)
@@ -50,4 +49,8 @@ def RunApp():
     else:
          speach_model.speak('Sorry ,my friend,I cant detect anything')
 
+
+
+
+setup_function()
 RunApp()

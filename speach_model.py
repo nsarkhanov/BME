@@ -4,7 +4,7 @@ import os
 
 
 def speak(text):
-    tts = gTTS(text=text, lang='en')
+    tts = gTTS(text=text, lang='en', slow=False)
     filename = "output.mp3"
     tts.save(filename)
     playsound.playsound(filename)
@@ -35,12 +35,12 @@ def speak(text):
 
 # rate = engine.getProperty('rate')   # getting details of current speaking rate
 # print (rate)                        #printing current voice rate
-# engine.setProperty('rate', 110) 
+# engine.setProperty('rate', 110)
 
 # """VOICE"""
 # voices = engine.getProperty('voices')       #getting details of current voice
 # #engine.setProperty('voice', voices[0].id)  #changing index, changes voices. o for male
-# engine.setProperty('voice', voices[1].id) 
+# engine.setProperty('voice', voices[1].id)
 
 # engine.say("I will speak this text")
 # engine.runAndWait()
